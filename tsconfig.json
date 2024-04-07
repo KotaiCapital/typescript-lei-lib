@@ -5,12 +5,6 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "types": [
-      "vite/client",
-      "node",
-      "react"
-    ],
     "lib": [
       "ESNext",
       "DOM",
@@ -36,10 +30,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
   ]
 }

@@ -10,34 +10,24 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsc && vite build --watch",
-    "start": "vite --host --open",
-    "build": "tsc && vite build",
+    "build": "tsc",
     "build:types": "dts-bundle-generator --config ./dts-bundle-generator.config.ts",
     "lint:scripts": "eslint . --ext .ts",
-    "lint:styles": "stylelint ./**/*.{css,scss}",
     "format:scripts": "prettier . --write",
-    "format:styles": "stylelint ./**/*.{css,scss} --fix"
+    "prepublish": "npx tsc"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": "https://github.com/zeynepziyagil/typescript-lei-lib.git",
-  "dependencies": {
-    "fetch": "^1.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.9.0",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
-    "@vitejs/plugin-react": "^4.0.4",
     "dts-bundle-generator": "^8.0.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vite-plugin-dts": "^3.5.4"
+    "typescript": "^5.2.2"
   }
 }
